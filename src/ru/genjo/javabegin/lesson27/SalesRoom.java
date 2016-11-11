@@ -1,5 +1,7 @@
-package ru.genjo.javabegin.lesson20hw;
+package ru.genjo.javabegin.lesson27;
 
+import ru.genjo.javabegin.lesson20hw.client.BaseBuyer;
+import ru.genjo.javabegin.lesson20hw.department.BaseDepartment;
 import ru.genjo.javabegin.lesson20hw.interfaces.IDepartment;
 import ru.genjo.javabegin.lesson20hw.interfaces.IVisitors;
 import ru.genjo.javabegin.lesson20hw.workers.Administrator;
