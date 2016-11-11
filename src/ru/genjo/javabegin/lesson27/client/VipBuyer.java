@@ -1,6 +1,6 @@
 package ru.genjo.javabegin.lesson27.client;
 
-public class VipBuyer extends BaseBuyer {
+public class VipBuyer extends AbstractVisitor {
     private  double discount;
 
     @Override

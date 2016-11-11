@@ -2,7 +2,7 @@ package ru.genjo.javabegin.lesson27.client;
 
 import ru.genjo.javabegin.lesson20hw.interfaces.IVisitors;
 
-public abstract class BaseBuyer implements IVisitors {
+public abstract class AbstractVisitor implements IVisitors {
     private String name;
 
     @Override

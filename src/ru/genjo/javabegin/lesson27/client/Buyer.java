@@ -1,6 +1,6 @@
 package ru.genjo.javabegin.lesson27.client;
 
-public class Buyer extends BaseBuyer {
+public class Buyer extends AbstractVisitor {
 
     @Override
     public void buy() {
