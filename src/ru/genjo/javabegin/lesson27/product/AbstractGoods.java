@@ -11,6 +11,13 @@ public abstract class AbstractGoods implements IGoods {
     private IDepartment department;
     private String company;
 
+    public AbstractGoods() {
+    }
+
+    public AbstractGoods(String name) {
+        this.name = name;
+    }
+
     @Override
     public double getPrice() {
         return price;

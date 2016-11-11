@@ -4,6 +4,10 @@ package ru.genjo.javabegin.lesson20hw.product;
 
 public class Computer extends ElectronicProduct {
 
+    public Computer(String intel) {
+
+    }
+
     @Override
     public void on() {
         super.on();

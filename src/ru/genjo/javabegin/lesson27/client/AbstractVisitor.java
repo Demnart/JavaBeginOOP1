@@ -9,6 +9,7 @@ public abstract class AbstractVisitor implements IVisitors {
 
     @Override
     public void buy(IGoods goods) {
+        System.out.println(goods.getName());
 
     }
 

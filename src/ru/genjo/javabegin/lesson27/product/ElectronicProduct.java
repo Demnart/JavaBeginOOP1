@@ -4,6 +4,13 @@ import ru.genjo.javabegin.lesson20hw.interfaces.IElectronicGoods;
 
 public  class ElectronicProduct extends AbstractGoods implements IElectronicGoods {
 
+    public ElectronicProduct() {
+        super();
+    }
+
+    public ElectronicProduct(String name) {
+        super(name);
+    }
 
     @Override
     public void on() {

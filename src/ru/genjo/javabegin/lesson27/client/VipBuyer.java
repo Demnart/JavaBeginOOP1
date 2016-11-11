@@ -1,29 +1,22 @@
 package ru.genjo.javabegin.lesson27.client;
 
+import ru.genjo.javabegin.lesson27.interfaces.IGoods;
+
 public class VipBuyer extends AbstractVisitor {
     private  double discount;
 
     @Override
-    public void buy() {
-        if (!checkDiscount()) {
-            super.buy();
-        } else {
-
-        }
-
+    public void buy(IGoods goods) {
+        super.buy(goods);
     }
 
-    private boolean checkDiscount() {
-        return discount>0;
+    @Override
+    public void returnGoods(IGoods goods) {
+        super.returnGoods(goods);
     }
 
     @Override
     public String getName() {
         return super.getName();
-    }
-
-    @Override
-    public void returnGoods() {
-        super.returnGoods();
     }
 }
