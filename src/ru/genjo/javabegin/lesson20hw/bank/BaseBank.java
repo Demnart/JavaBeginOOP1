@@ -1,13 +1,33 @@
 package ru.genjo.javabegin.lesson20hw.bank;
 
-public class BaseBank {
-   private String name;
+import ru.genjo.javabegin.lesson20hw.interfaces.IBank;
+
+/**
+ * Created by Артем on 11.11.2016.
+ * JavaBeginOOP1
+ */
+public class BaseBank implements IBank {
+    private String  name;
     private String creditDescription;
-    public void checkRequest() {
+
+
+    @Override
+    public String getCreditDescription() {
+        return creditDescription;
+    }
+
+    @Override
+    public void chekInfo() {
 
     }
 
-    public void giveCredit() {
+    @Override
+    public void getCredit() {
 
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

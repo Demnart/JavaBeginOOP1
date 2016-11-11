@@ -1,14 +1,16 @@
 package ru.genjo.javabegin.lesson20hw.product;
 
-import ru.genjo.javabegin.lesson20hw.department.BaseDepartment;
+import ru.genjo.javabegin.lesson20hw.interfaces.IDepartment;
+import ru.genjo.javabegin.lesson20hw.interfaces.IGoods;
 
-public abstract class BaseGoods {
-    private  double price;
+public class BaseGoods implements IGoods {
+    private double price;
     private boolean hasGuarant;
     private String name;
-    private BaseDepartment department;
+    private IDepartment department;
     private String company;
 
+    @Override
     public double getPrice() {
         return price;
     }
@@ -17,35 +19,41 @@ public abstract class BaseGoods {
         this.price = price;
     }
 
-    public boolean isHasGuarant() {
-        return hasGuarant;
-    }
-
     public void setHasGuarant(boolean hasGuarant) {
         this.hasGuarant = hasGuarant;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public BaseDepartment getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(BaseDepartment department) {
+    public void setDepartment(IDepartment department) {
         this.department = department;
-    }
-
-    public String getCompany() {
-        return company;
     }
 
     public void setCompany(String company) {
         this.company = company;
     }
+
+    @Override
+    public boolean hasGuarant() {
+
+        return false;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public IDepartment getIDepartment() {
+        return department;
+    }
+
+    @Override
+    public String getCompany() {
+        return company;
+    }
 }
+

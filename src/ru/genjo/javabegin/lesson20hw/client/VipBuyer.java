@@ -1,25 +1,20 @@
 package ru.genjo.javabegin.lesson20hw.client;
 
-public class VipBuyer extends Buyers {
+public class VipBuyer extends BaseBuyer {
     private  double discount;
 
     @Override
     public void buy() {
-        if (checkDiscount()) {
+        if (!checkDiscount()) {
             super.buy();
         } else {
-            //Код
+
         }
+
     }
 
-    @Override
-    public void purchaseReturn() {
-        super.purchaseReturn();
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
+    private boolean checkDiscount() {
+        return discount>0;
     }
 
     @Override
@@ -27,7 +22,8 @@ public class VipBuyer extends Buyers {
         return super.getName();
     }
 
-    private boolean checkDiscount () {
-        return discount > 0;
+    @Override
+    public void returnGoods() {
+        super.returnGoods();
     }
 }

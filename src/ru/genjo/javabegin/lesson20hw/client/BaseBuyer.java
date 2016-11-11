@@ -1,19 +1,23 @@
 package ru.genjo.javabegin.lesson20hw.client;
 
-public class Buyer extends BaseBuyer {
+import ru.genjo.javabegin.lesson20hw.interfaces.IVisitors;
+
+public  class BaseBuyer implements IVisitors {
+    private String name;
 
     @Override
     public void buy() {
-        super.buy();
+
     }
 
     @Override
     public String getName() {
-        return super.getName();
+        return name;
     }
 
     @Override
     public void returnGoods() {
-        super.returnGoods();
+
+
     }
 }

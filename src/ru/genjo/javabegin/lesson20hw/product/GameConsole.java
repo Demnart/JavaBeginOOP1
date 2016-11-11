@@ -2,7 +2,7 @@ package ru.genjo.javabegin.lesson20hw.product;
 
 public class GameConsole extends ElectronicProduct {
     @Override
-    public  void on() {
+    public void on() {
         super.on();
     }
 
@@ -12,20 +12,7 @@ public class GameConsole extends ElectronicProduct {
     }
 
     @Override
-   public void loadOS() {
+    public void loadOS() {
         super.loadOS();
-    }
-
-    public void playGame() {
-
-    }
-    @Override
-    public void setModelName(String modelName) {
-        super.setModelName(modelName);
-    }
-
-    @Override
-    public String getModelName() {
-        return super.getModelName();
     }
 }

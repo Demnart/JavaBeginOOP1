@@ -1,28 +1,21 @@
 package ru.genjo.javabegin.lesson20hw.product;
 
-public abstract class ElectronicProduct extends BaseGoods {
+import ru.genjo.javabegin.lesson20hw.interfaces.IElectronicGoods;
 
-    private String modelName;
-
-
-    public String getModelName() {
-        return modelName;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
+public class ElectronicProduct extends BaseGoods implements IElectronicGoods {
 
 
-    void on() {
+    @Override
+    public void on() {
 
     }
 
-    void off() {
+    @Override
+    public void off() {
 
     }
 
-    void loadOS() {
+    public void loadOS() {
 
     }
 }

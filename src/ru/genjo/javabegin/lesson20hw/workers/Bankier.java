@@ -1,10 +1,10 @@
 package ru.genjo.javabegin.lesson20hw.workers;
 
-import ru.genjo.javabegin.lesson20hw.bank.BaseBank;
+import ru.genjo.javabegin.lesson20hw.interfaces.IBank;
 
 public class Bankier extends BaseEmploee {
     private String name;
-    private BaseBank baseBank;
+    private IBank baseBank;
 
     public void sendRequest() {
 
