@@ -3,7 +3,7 @@ package ru.genjo.javabegin.lesson27.product;
 import ru.genjo.javabegin.lesson20hw.interfaces.IDepartment;
 import ru.genjo.javabegin.lesson20hw.interfaces.IGoods;
 
-public abstract class BaseGoods implements IGoods {
+public abstract class AbstractGoods implements IGoods {
     private double price;
     private boolean hasGuarant;
     private String name;

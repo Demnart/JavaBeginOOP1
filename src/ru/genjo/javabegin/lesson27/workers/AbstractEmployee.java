@@ -3,7 +3,7 @@ package ru.genjo.javabegin.lesson27.workers;
 import ru.genjo.javabegin.lesson20hw.interfaces.IDepartment;
 import ru.genjo.javabegin.lesson20hw.interfaces.IEmployee;
 
-public abstract class BaseEmploee implements IEmployee {
+public abstract class AbstractEmployee implements IEmployee {
     private String name;
     private IDepartment department;
     private boolean free;

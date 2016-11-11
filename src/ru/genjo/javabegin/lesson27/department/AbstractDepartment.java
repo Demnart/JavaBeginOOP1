@@ -6,7 +6,7 @@ import ru.genjo.javabegin.lesson20hw.interfaces.IGoods;
 
 import java.util.ArrayList;
 
-public abstract class BaseDepartment implements IDepartment {
+public abstract class AbstractDepartment implements IDepartment {
     private String name;
     private ArrayList<IEmployee> emploees;
     private ArrayList<IGoods> goodses;

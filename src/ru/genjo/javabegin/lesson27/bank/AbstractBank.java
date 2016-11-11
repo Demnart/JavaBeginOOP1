@@ -6,11 +6,11 @@ import ru.genjo.javabegin.lesson20hw.interfaces.IBank;
  * Created by Артем on 11.11.2016.
  * JavaBeginOOP1
  */
-public abstract class BaseBank implements IBank {
+public abstract class AbstractBank implements IBank {
     private String  name;
     private String creditDescription;
 
-    public BaseBank(String name, String creditDescription) {
+    public AbstractBank(String name, String creditDescription) {
         this.name = name;
         this.creditDescription = creditDescription;
     }
