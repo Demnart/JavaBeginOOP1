@@ -1,7 +1,8 @@
 package ru.genjo.javabegin.lesson27.product;
 
-import ru.genjo.javabegin.lesson20hw.interfaces.IDepartment;
-import ru.genjo.javabegin.lesson20hw.interfaces.IGoods;
+
+import ru.genjo.javabegin.lesson27.interfaces.IDepartment;
+import ru.genjo.javabegin.lesson27.interfaces.IGoods;
 
 public abstract class AbstractGoods implements IGoods {
     private double price;

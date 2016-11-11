@@ -5,9 +5,9 @@ package ru.genjo.javabegin.lesson27.interfaces;
  */
 public interface IVisitors {
 
-    void buy();
+    void buy( IGoods goods);
 
-    void returnGoods();
+    void returnGoods(IGoods goods);
 
     String getName();
 }

@@ -1,6 +1,7 @@
 package ru.genjo.javabegin.lesson27.bank;
 
-import ru.genjo.javabegin.lesson20hw.interfaces.IBank;
+
+import ru.genjo.javabegin.lesson27.interfaces.IBank;
 
 /**
  * Created by Артем on 11.11.2016.
